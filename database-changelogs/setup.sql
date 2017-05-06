@@ -18,7 +18,7 @@ CREATE DATABASE test
 
 CREATE TABLE public.message
 (
-  id bigint NOT NULL DEFAULT nextval('message_id_seq'::regclass),
+  id bigserial NOT NULL,
   mobile character varying(20) NOT NULL,
   msg text NOT NULL,
   external_key character varying(100),
